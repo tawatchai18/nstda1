@@ -31,7 +31,7 @@ export default function register() {
 
     window.addEventListener('load', () => {
       const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
-      
+
       if (isLocalhost) {
         // This is running on localhost. Lets check if a service worker still exists or not.
         checkValidServiceWorker(swUrl);
@@ -76,7 +76,6 @@ function checkValidServiceWorker(swUrl) {
   // Check if the service worker can be found. If it can't reload the page.
   fetch(swUrl)
     .then(response => {
-      //response.headers.set("Access-Control-Allow-Origin","*")
       // Ensure service worker exists, and that we really are getting a JS file.
       if (
         response.status === 404 ||
