@@ -4,13 +4,6 @@ import './App.css';
 import { Input, Form, Button,Table,Layout,columns} from 'antd';
 
 class App extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     search: '',
-  //   };
-  // }
- 
   constructor( ) {
     super()
     this.state = {
@@ -31,7 +24,6 @@ class App extends Component {
     console.log(this.data);
     
     console.log(this.state.dataSource);
-    // console.log(columns);
 
     const columns = [{
       title: 'NAME',
@@ -70,7 +62,6 @@ class App extends Component {
       <div style={{marginTop:100}}>
         <div className="App">
           <div style={{marginTop:10}}>
-            {/* <h2></h2> */}
           </div>
         </div >
         <center>
